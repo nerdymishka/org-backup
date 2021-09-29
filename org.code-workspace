@@ -1,0 +1,19 @@
+{
+    "folders": [
+        {
+            "name": "nmfx",
+            "path": "nmfx"
+        },
+        {
+            "name": "profile",
+            "path": "profile"
+        }
+    ],
+
+    "extensions": {
+
+    },
+
+    "settings": {
+    }
+}
