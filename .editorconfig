@@ -43,8 +43,12 @@ dotnet_diagnostic.SA1402.severity = none
 dotnet_diagnostic.CS1591.severity = none
 dotnet_diagnostic.SA1503.severity = none 
 dotnet_diagnostic.S1135.severity = none
+dotnet_diagnostic.SA1311.severity = none
 dotnet_diagnostic.SA1601.severity = suggestion
-dotnet_diagnostic.SA1108.serverity = suggestion
+dotnet_diagnostic.SA1108.severity = suggestion
+dotnet_diagnostic.SA1602.severity = none
+dotnet_diagnostic.RCS1135.severity = none
+dotnet_diagnostic.S4070.severity = none
 
 [*.{xml,build.props,build.targets,csproj}]
 indent_size = 2

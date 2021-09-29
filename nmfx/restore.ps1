@@ -16,5 +16,5 @@ if($Install)
     Invoke-PSDepend "$PsScriptRoot/requirements.psd1" -Force
 }
 
-Set-Alias "psake" "invoke-psake"
-Set-Alias "psdepend" "invoke-psdepend"
+Set-Alias "psake" "invoke-psake" -Scope Global
+Set-Alias "psdepend" "invoke-psdepend" -Scope Global

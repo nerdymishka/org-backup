@@ -18,15 +18,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ReflectionAnalyzers" Version="0.1.22-dev" PrivateAssets="all"/>
-    <PackageReference Include="SecurityCodeScan.VS2019" Version="5.1.0" PrivateAssets="all"/>
-    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.333" PrivateAssets="all"/>
-    <PackageReference Include="SonarAnalyzer.CSharp " Version="8.23.0.32424" PrivateAssets="all"/>
-    <PackageReference Include="Text.Analyzers" Version="2.6.4" PrivateAssets="all"/>
-    <PackageReference Include="AsyncFixer" Version="1.5.1" PrivateAssets="all"/>
-    <PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="3.3.2" PrivateAssets="all"/>
-    <PackageReference Include="Roslynator.Analyzers" Version="3.1.0"  PrivateAssets="all"/>
-    <PackageReference Include="DotNetAnalyzers.DocumentationAnalyzers" Version="1.0.0-beta.59" PrivateAssets="all" />
+    <PackageReference Include="ReflectionAnalyzers" Version="*-*" PrivateAssets="all"/>
+    <PackageReference Include="SecurityCodeScan.VS2019" Version="*" PrivateAssets="all"/>
+    <PackageReference Include="StyleCop.Analyzers" Version="*-*" PrivateAssets="all"/>
+    <PackageReference Include="SonarAnalyzer.CSharp " Version="*-*" PrivateAssets="all"/>
+    <PackageReference Include="Text.Analyzers" Version="*" PrivateAssets="all"/>
+    <PackageReference Include="AsyncFixer" Version="*" PrivateAssets="all"/>
+    <PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="*" PrivateAssets="all"/>
+    <PackageReference Include="Roslynator.Analyzers" Version="*"  PrivateAssets="all"/>
+    <PackageReference Include="DotNetAnalyzers.DocumentationAnalyzers" Version="*-*" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>

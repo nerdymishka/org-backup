@@ -16,6 +16,12 @@ task "build" {
 }
 
 task "restore" {
+    Exec {
+        dotnet restore
+    }
+}
+
+task "setup" {
     & "$PsScriptRoot/restore.ps1" -Install
 }
 
