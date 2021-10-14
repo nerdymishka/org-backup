@@ -1,30 +1,43 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31808.319
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FFD791A0-F1B2-40C5-83EF-51863904768F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mettle.Attributes", "Mettle.Attributes", "{AFB23872-8626-4EBB-9A38-863E45F5BBB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mettle.Attributes", "src\Mettle.Attributes\src\Mettle.Attributes.csproj", "{81E69CE5-2E0B-4B9B-8EFC-0FB9EC4AA060}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mettle.Attributes", "src\Mettle.Attributes\src\Mettle.Attributes.csproj", "{81E69CE5-2E0B-4B9B-8EFC-0FB9EC4AA060}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cdk.Docker", "Cdk.Docker", "{C6504B9D-BCDF-4D3D-891D-83AE8386E320}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CdkDocker", "src\Cdk.Docker\src\CdkDocker.csproj", "{5B64037D-47A9-4738-9ED1-573344314F5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{81E69CE5-2E0B-4B9B-8EFC-0FB9EC4AA060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{81E69CE5-2E0B-4B9B-8EFC-0FB9EC4AA060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81E69CE5-2E0B-4B9B-8EFC-0FB9EC4AA060}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81E69CE5-2E0B-4B9B-8EFC-0FB9EC4AA060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B64037D-47A9-4738-9ED1-573344314F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B64037D-47A9-4738-9ED1-573344314F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B64037D-47A9-4738-9ED1-573344314F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B64037D-47A9-4738-9ED1-573344314F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AFB23872-8626-4EBB-9A38-863E45F5BBB8} = {FFD791A0-F1B2-40C5-83EF-51863904768F}
 		{81E69CE5-2E0B-4B9B-8EFC-0FB9EC4AA060} = {AFB23872-8626-4EBB-9A38-863E45F5BBB8}
+		{C6504B9D-BCDF-4D3D-891D-83AE8386E320} = {FFD791A0-F1B2-40C5-83EF-51863904768F}
+		{5B64037D-47A9-4738-9ED1-573344314F5D} = {C6504B9D-BCDF-4D3D-891D-83AE8386E320}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0299AE92-5FD1-4594-8318-D0C339BB871F}
 	EndGlobalSection
 EndGlobal
