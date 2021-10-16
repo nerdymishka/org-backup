@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions.EntityFrameworkC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdyMishka.Extensions.EntityFrameworkCore", "src\Extensions.EntityFrameworkCore\src\NerdyMishka.Extensions.EntityFrameworkCore.csproj", "{C553AC7A-5E05-4675-9174-B562CE744882}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdyMishka.Core.Tests", "src\Core\test\NerdyMishka.Core.Tests.csproj", "{E54DBF4E-956A-414F-B009-EE361463ACFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{C553AC7A-5E05-4675-9174-B562CE744882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C553AC7A-5E05-4675-9174-B562CE744882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C553AC7A-5E05-4675-9174-B562CE744882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E54DBF4E-956A-414F-B009-EE361463ACFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E54DBF4E-956A-414F-B009-EE361463ACFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E54DBF4E-956A-414F-B009-EE361463ACFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E54DBF4E-956A-414F-B009-EE361463ACFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{BFFB05CA-F336-4443-AC1C-C72600BAD10D} = {3E764FFE-7137-408E-91B6-C5F2348FFBAF}
 		{2CA33166-9738-4D88-AB0F-C1DEFCDC1091} = {FFD791A0-F1B2-40C5-83EF-51863904768F}
 		{C553AC7A-5E05-4675-9174-B562CE744882} = {2CA33166-9738-4D88-AB0F-C1DEFCDC1091}
+		{E54DBF4E-956A-414F-B009-EE361463ACFE} = {3E764FFE-7137-408E-91B6-C5F2348FFBAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0299AE92-5FD1-4594-8318-D0C339BB871F}

@@ -37,9 +37,9 @@ namespace Mettle.Sdk
 
             var traits = new Dictionary<string, List<string>>();
 
-            if (!platforms.HasFlag(TestPlatforms.Any))
+            if (platforms != 0 && !platforms.HasFlag(TestPlatforms.Any))
             {
-                var formatted = platforms.ToString("{0:G}");
+                var formatted = platforms.ToString("G");
                 traits.Add("platforms", formatted);
                 if (!DiscovererHelpers.TestPlatformApplies(platforms))
                 {
@@ -48,9 +48,9 @@ namespace Mettle.Sdk
                 }
             }
 
-            if (!runtimes.HasFlag(TestRuntimes.Any))
+            if (runtimes != 00 && !runtimes.HasFlag(TestRuntimes.Any))
             {
-                var formatted = runtimes.ToString("{0:G}");
+                var formatted = runtimes.ToString("G");
                 traits.Add("runtimes", formatted);
                 if (!DiscovererHelpers.TestRuntimeApplies(runtimes))
                 {
@@ -61,9 +61,9 @@ namespace Mettle.Sdk
                 }
             }
 
-            if (!frameworks.HasFlag(DotNetFrameworks.Any))
+            if (frameworks != 0 && !frameworks.HasFlag(DotNetFrameworks.Any))
             {
-                var formatted = frameworks.ToString("{0:G}");
+                var formatted = frameworks.ToString("G");
                 traits.Add("frameworks", formatted);
                 if (!DiscovererHelpers.TestFrameworkApplies(frameworks))
                 {
@@ -74,9 +74,9 @@ namespace Mettle.Sdk
                 }
             }
 
-            if (!configurations.HasFlag(RuntimeConfigurations.Any))
+            if (configurations != 0 && !configurations.HasFlag(RuntimeConfigurations.Any))
             {
-                var formatted = configurations.ToString("{0:G}");
+                var formatted = configurations.ToString("G");
                 traits.Add("configurations", formatted);
                 if (!DiscovererHelpers.RuntimeConfigurationApplies(configurations))
                 {

@@ -8,8 +8,8 @@ namespace Mettle
     [Flags]
     public enum TestRuntimes
     {
+        Any = ~0,
         CoreCLR = 1,
         Mono = 2,
-        Any = ~0,
     }
 }

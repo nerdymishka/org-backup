@@ -9,6 +9,7 @@ namespace Mettle
     [SuppressMessage("CS4070", "S4070:", Justification = "By Design")]
     public enum TestPlatforms
     {
+        Any = ~0,
         Windows = 1,
         Linux = 2,
         OSX = 4,
@@ -22,6 +23,5 @@ namespace Mettle
         Browser = 1024,
         MacCatalyst = 2048,
         AnyUnix = FreeBSD | Linux | NetBSD | OSX | Illumos | Solaris | IOS | TVOS | MacCatalyst | Android | Browser,
-        Any = ~0,
     }
 }
