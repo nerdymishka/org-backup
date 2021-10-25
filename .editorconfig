@@ -52,6 +52,7 @@ dotnet_diagnostic.S4070.severity = none
 dotnet_diagnostic.S3903.severity = none # namespaces in .net 6 differ
 dotnet_diagnostic.S125.severity = suggestion # commenting out code is benefitial
 dotnet_diagnostic.S3267.severity = suggestion
+dotnet_diagnostic.CA1704.severity = suggestion
 
 [*.{xml,build.props,build.targets,csproj}]
 indent_size = 2
