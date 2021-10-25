@@ -15,29 +15,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CdkDocker", "src\Cdk.Docker
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerShell.Core", "PowerShell.Core", "{29894D68-0A4D-48D3-B9C4-320AA020E15B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdyMishka.PowerShell.Core", "src\PowerShell.Core\src\NerdyMishka.PowerShell.Core.csproj", "{31AE81F9-9E3F-47F1-8523-2F836CAD2BE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdyMishka.PowerShell.Core", "src\PowerShell.Core\src\NerdyMishka.PowerShell.Core.csproj", "{31AE81F9-9E3F-47F1-8523-2F836CAD2BE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{3A7D20D4-EDA5-473D-8A72-EBA43B112344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdyMishka.WebApi", "src\WebApi\src\NerdyMishka.WebApi.csproj", "{A50B4F5E-C48C-4AC5-8D36-C8594DD69CF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdyMishka.WebApi", "src\WebApi\src\NerdyMishka.WebApi.csproj", "{A50B4F5E-C48C-4AC5-8D36-C8594DD69CF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3E764FFE-7137-408E-91B6-C5F2348FFBAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdyMishka.Core", "src\Core\src\NerdyMishka.Core.csproj", "{BFFB05CA-F336-4443-AC1C-C72600BAD10D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdyMishka.Core", "src\Core\src\NerdyMishka.Core.csproj", "{BFFB05CA-F336-4443-AC1C-C72600BAD10D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions.EntityFrameworkCore", "Extensions.EntityFrameworkCore", "{2CA33166-9738-4D88-AB0F-C1DEFCDC1091}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdyMishka.Extensions.EntityFrameworkCore", "src\Extensions.EntityFrameworkCore\src\NerdyMishka.Extensions.EntityFrameworkCore.csproj", "{C553AC7A-5E05-4675-9174-B562CE744882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdyMishka.Extensions.EntityFrameworkCore", "src\Extensions.EntityFrameworkCore\src\NerdyMishka.Extensions.EntityFrameworkCore.csproj", "{C553AC7A-5E05-4675-9174-B562CE744882}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdyMishka.Core.Tests", "src\Core\test\NerdyMishka.Core.Tests.csproj", "{E54DBF4E-956A-414F-B009-EE361463ACFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdyMishka.Core.Tests", "src\Core\test\NerdyMishka.Core.Tests.csproj", "{E54DBF4E-956A-414F-B009-EE361463ACFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security.Abstractions", "Security.Abstractions", "{6B61F20C-9322-423D-9A08-0DA5DDDDE6A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdyMiska.Security.Abstractions", "src\Security.Abstractions\src\NerdyMiska.Security.Abstractions.csproj", "{0A4BF898-D994-4D53-8247-B2D4407450CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdyMiska.Security.Abstractions", "src\Security.Abstractions\src\NerdyMiska.Security.Abstractions.csproj", "{0A4BF898-D994-4D53-8247-B2D4407450CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security.Cryptography.X509Certificates", "Security.Cryptography.X509Certificates", "{2B3A2B6F-67C9-4EC2-9204-9A6C699E9FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdyMiska.Security.Cryptography.X509Certificates", "src\Security.Cryptography.X509Certificates\src\NerdyMiska.Security.Cryptography.X509Certificates.csproj", "{03399BFC-C129-4E4A-BDD3-7CC670E04E27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdyMishka.Security.Cryptography.X509Certificates", "src\Security.Cryptography.X509Certificates\src\NerdyMishka.Security.Cryptography.X509Certificates.csproj", "{03399BFC-C129-4E4A-BDD3-7CC670E04E27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

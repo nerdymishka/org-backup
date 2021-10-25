@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace NerdyMiska.Security.Cryptography.X509Certificates
+namespace NerdyMishka.Security.Cryptography.X509Certificates
 {
     public abstract class CertificateAlgorithmOptions
     {

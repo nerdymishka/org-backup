@@ -238,7 +238,6 @@ namespace NerdyMishka.Security.Cryptography.X509Certificates
         /// </summary>
         public const string DigitalRights = "1.3.6.1.4.1.311.10.5.1";
 
-
         /// <summary>
         /// The Preview Build Signing oid (1.3.6.1.4.1.311.10.3.27).
         /// </summary>
@@ -308,5 +307,23 @@ namespace NerdyMishka.Security.Cryptography.X509Certificates
         /// The OEM Windows System Component Verification oid (1.3.6.1.4.1.311.10.3.7).
         /// </summary>
         public const string OEMWindowsSystemComponentVerification = "1.3.6.1.4.1.311.10.3.7";
+
+        /// <summary>
+        /// The Subject Key Identifier oid (2.5.29.14).
+        /// </summary>
+        public const string SubjectKeyIdentifier = "2.5.29.14";
+
+        public const string MacAddress = "1.3.6.1.1.1.1.22";
+
+        /// <summary>
+        /// The Authority Key Identifier oid (2.5.29.35).
+        /// </summary>
+        public const string AuthorityKeyIdentifier = "2.5.29.35";
+
+        public const string Dsa = "1.2.840.10040.4.1";
+
+        public const string Rsa = "1.2.840.113549.1.1.1";
+
+        public const string Ec = "1.2.840.10045.2.1";
     }
 }

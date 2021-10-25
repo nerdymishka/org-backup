@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace NerdyMiska.Security.Cryptography.X509Certificates
+namespace NerdyMishka.Security.Cryptography.X509Certificates
 {
     public class BasicConstraints
     {
@@ -25,5 +26,14 @@ namespace NerdyMiska.Security.Cryptography.X509Certificates
         /// Gets or sets a value indicating whether the certificate is critical.
         /// </summary>
         public bool Critical { get; set; }
+
+        public X509Extension ToX509Extension()
+        {
+            return new X509BasicConstraintsExtension(
+                this.CertificateAuthority,
+                this.HasPathLengthConstraint,
+                this.PathLengthConstraint,
+                this.Critical);
+        }
     }
 }

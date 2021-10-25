@@ -1,22 +1,68 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
-namespace NerdyMiska.Security.Cryptography.X509Certificates
+namespace NerdyMishka.Security.Cryptography.X509Certificates
 {
     public struct CertificateLifetime
     {
-        public CertificateLifetime(DateTimeOffset? from = null, DateTimeOffset? to = null)
+        public CertificateLifetime(DateTimeOffset? notBefore = null, DateTimeOffset? notAfter = null)
         {
-            from ??= DateTimeOffset.UtcNow;
-            to ??= from.Value.AddDays(90);
+            notBefore ??= DateTimeOffset.UtcNow;
+            notAfter ??= notBefore.Value.AddDays(90);
 
-            this.From = from.Value;
-            this.To = to.Value;
+            this.NotBefore = notBefore.Value;
+            this.NotAfter = notAfter.Value;
         }
 
-        public DateTimeOffset From { get; set; }
+        public CertificateLifetime(TimeSpan span)
+        {
+            var now = DateTimeOffset.UtcNow;
+            this.NotBefore = now;
+            this.NotAfter = now.Add(span);
+        }
 
-        public DateTimeOffset To { get; set; }
+        [SuppressMessage("Readability Rules", "SA1129:Do not use default type constructor", Justification = "Constuctor has defaults")]
+        public static CertificateLifetime Default { get; } = new CertificateLifetime();
+
+        public DateTimeOffset NotBefore { get; set; }
+
+        public DateTimeOffset NotAfter { get; set; }
+
+        public static implicit operator CertificateLifetime(TimeSpan span)
+        {
+            return new CertificateLifetime(span);
+        }
+
+        public static implicit operator CertificateLifetime(long ticks)
+        {
+            return new CertificateLifetime(new TimeSpan(ticks));
+        }
+
+        public static implicit operator CertificateLifetime(DateTimeOffset notAfter)
+        {
+            return new CertificateLifetime(DateTimeOffset.UtcNow, notAfter);
+        }
+
+        public static implicit operator CertificateLifetime(DateTime notAfter)
+        {
+            return new CertificateLifetime(DateTimeOffset.UtcNow, notAfter);
+        }
+
+        public static CertificateLifetime AsOneYear()
+        {
+            return new CertificateLifetime(DateTimeOffset.UtcNow, DateTimeOffset.UtcNow.AddYears(1));
+        }
+
+        public static CertificateLifetime AsFiveYears()
+        {
+            return new CertificateLifetime(DateTimeOffset.UtcNow, DateTimeOffset.UtcNow.AddYears(5));
+        }
+
+        public static CertificateLifetime AsTenYears()
+        {
+            return new CertificateLifetime(DateTimeOffset.UtcNow, DateTimeOffset.UtcNow.AddYears(10));
+        }
     }
 }
