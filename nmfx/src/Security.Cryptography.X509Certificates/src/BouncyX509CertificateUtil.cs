@@ -254,6 +254,8 @@ namespace NerdyMishka.Security.Cryptography.X509Certificates
             ISignatureFactory? signatureFactory = null;
             var privateKey = Org.BouncyCastle.Security.DotNetUtilities.GetKeyPair(issuer.PrivateKey).Private;
 
+
+
             if (issuer.GetECDsaPrivateKey() != null)
             {
                 signatureFactory = new Asn1SignatureFactory("SHA256wtihECSDA", privateKey);

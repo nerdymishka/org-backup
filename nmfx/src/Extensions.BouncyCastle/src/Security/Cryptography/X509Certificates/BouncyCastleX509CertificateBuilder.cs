@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using Org.BouncyCastle.Asn1.Pkcs;
@@ -146,7 +147,27 @@ namespace NerdyMishka.Security.Cryptography.X509Certificates
             if (bouncyX509Certificate != null)
                 cert.Verify(bouncyX509Certificate.GetPublicKey());
 
-            return null;
+
+            string alias = cert.SubjectDN.ToString();
+            Pkcs12Store store = new Pkcs12StoreBuilder().Build();
+
+            X509CertificateEntry certEntry = new X509CertificateEntry(cert);
+            store.SetCertificateEntry(alias, certEntry);
+
+            // TODO: This needs extra logic to support a certificate chain
+            AsymmetricKeyEntry keyEntry = new AsymmetricKeyEntry(kp.Private);
+            store.SetKeyEntry(alias, keyEntry, new X509CertificateEntry[] { certEntry });
+
+            byte[] certificateData;
+            var tmpPassword = "temp@#23d23421ds_+";
+            using (var ms = new MemoryStream())
+            {
+                store.Save(ms, tmpPassword.ToCharArray(), new SecureRandom());
+                ms.Flush();
+                certificateData = ms.ToArray();
+            }
+
+            return new X509Certificate2(certificateData, tmpPassword, X509KeyStorageFlags.Exportable | X509KeyStorageFlags.PersistKeySet);
         }
     }
 }
